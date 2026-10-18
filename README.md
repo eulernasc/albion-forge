@@ -16,6 +16,14 @@ Preços vêm de https://west.albion-online-data.com; ausência de coleta não si
 ## Avalon — limitação real
 Ainda não há feed automático de conexões conectado. Menor rota para qualquer Royal ou cidade específica, somente entre ligações informadas com evidência e expiração. Não informa uma rota atual de Qiitun-Vietis sem esses dados. Não prevê portais ou segurança.
 
+## Busca ampliada e comunidades
+
+A seção Buscar itens pesquisa todos os tiers e encantamentos existentes, cinco qualidades e sete cidades; inclui registros antigos identificados, cópia local da última consulta, histórico de vendas separado e livro de ofertas. Os totais da build continuam restritos à meta selecionada; os resultados amplos não são equivalentes em potência.
+
+Conexões podem ser importadas por JSON normalizado, resposta Portaler.app ou Modern Portaler, ou por URL de feed público compatível com CORS. Exige confirmar Américas, descarta conexões expiradas e identifica a data de importação quando a observação original não foi informada. Não é uma conexão autenticada ao Portaler. Consulte SOURCES.md para fontes pesquisadas, acessos exigidos e limitações.
+
+Execute também node test-search.cjs antes de publicar.
+
 ## Armazenamento e validação
 Dados locais no navegador; exporte backup. Testes do cálculo de rotas passam. Interface e instalação ainda precisam de validação em navegador.
 

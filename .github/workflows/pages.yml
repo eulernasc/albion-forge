@@ -18,8 +18,10 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     steps:
       - uses: actions/checkout@v6
-      - name: Verificar calculo de rotas
-        run: node test-routes.cjs
+      - name: Verificar rotas e busca ampliada
+        run: |
+          node test-routes.cjs
+          node test-search.cjs
       - uses: actions/configure-pages@v5
       - uses: actions/upload-pages-artifact@v4
         with:
@@ -27,3 +29,4 @@ jobs:
       - name: Publicar
         id: deployment
         uses: actions/deploy-pages@v4
+
