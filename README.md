@@ -24,6 +24,14 @@ Conexões podem ser importadas por JSON normalizado, resposta Portaler.app ou Mo
 
 Execute também node test-search.cjs antes de publicar.
 
+## Saída até Royal
+
+Rotas terrestres no próprio app, sem outra conta, usando 736 zonas da fotografia de 18/03/2026 do Avalon Tracker. Cidades Royal e portais das Outlands são destinos distintos. Há opção para evitar zonas vermelhas. A busca de portal nas Outlands termina no portal; não inventa a passagem até a cidade.
+
+O botão Completar até cidade Royal junta portais temporários válidos dos seus registros com trechos terrestres Royal da malha estática. Cada trecho informa sua fonte; conexões temporárias precisam ter expiração futura. Sem registros não há saída inventada de Qiitun-Vietis. Dados estáticos podem estar incompletos ou antigos e não avaliam risco atual.
+
+Os arquivos world-reference.json e world-part-*.json formam a fotografia publicada, com fonte fixada em um commit. Veja THIRD-PARTY.txt. O comando prepare-world.cjs só é necessário para regenerar esses arquivos a partir do world-graph.json da fonte; o build usa os arquivos já salvos. Execute node test-journey.cjs para verificar o cálculo antes da publicação.
+
 ## Armazenamento e validação
-Dados locais no navegador; exporte backup. Testes do cálculo de rotas passam. Interface e instalação ainda precisam de validação em navegador.
+Dados locais no navegador; exporte backup. Os testes de cálculo e busca passam. Busca de preços validada em navegador; a instalação no sistema depende do suporte do navegador. Nenhuma conta ou sincronização em nuvem foi adicionada.
 

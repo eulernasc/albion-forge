@@ -52,3 +52,16 @@ Não há uma rota atual comprovada de Qiitun-Vietis até Royal. Ainda não exist
 
 A pesquisa cobriu serviços e projetos encontrados por busca pública e leitura das fontes citadas. Não representa auditoria de todos os serviços existentes nem valida comunidades privadas ou mensagens internas de Discord.
 
+## Versão publicada com rotas terrestres
+
+A seção Saída até Royal calcula trajetos no próprio app, sem depender de novo cadastro. Usa os nomes, cores e adjacências das 736 zonas em [world-graph.json](https://github.com/Crinlorite/avalontracker/blob/5fc0b24125ac71a016ef43bb125d7a171db736d4/src/data/world-graph.json) do Avalon Tracker, fotografia de 18/03/2026. A data está visível na interface. É referência estática e pode estar incompleta ou antiga; não contém as ligações atuais de Avalon. Não foram usadas as conexões de world-meta.json, de origem mais antiga e com correções manuais sem validação independente.
+
+O trajeto até cidade Royal usa a malha terrestre do continente Royal. O trajeto nas Outlands termina no portal de cidade e não inclui uma passagem inventada até a cidade. O botão Completar até cidade Royal aceita portais temporários válidos já registrados/importados e usa a malha para completar apenas os trechos terrestres Royal. Cada trecho preserva sua fonte. A opção Evitar zonas vermelhas permite sair de uma origem vermelha, mas não entrar em novas zonas vermelhas.
+
+Alternativas adicionais verificadas: [Avalon Tracker Exit Finder](https://avalontracker.app/exits), consultável sem login, devolveu aviso de ausência de rota fixa para Qiitun-Vietis no teste de interface; [Albion Roads Mapper](https://albionroadsmapper.com/faq/) aceita mapas compartilhados e edição manual sem conta, sem exportação JSON conforme FAQ; [Albion Roads](https://www.albionroads.com/) abriu um catálogo de 329 mapas estáticos. Nenhuma dessas verificações forneceu uma rede de portais atuais de Qiitun-Vietis em Américas.
+
+O acesso ao Portaler.app foi testado e não forneceu um mapa comunitário preenchido utilizável nesta integração. Ele não é requisito da versão publicada.
+
+Créditos e licença da referência terrestre estão em THIRD-PARTY.txt. Dados do jogo pertencem à Sandbox Interactive; o projeto de origem publica seu código sob MIT.
+
+
